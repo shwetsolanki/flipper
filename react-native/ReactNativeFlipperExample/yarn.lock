@@ -5009,6 +5009,9 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+react-native-firetv@./packages/react-native-firetv:
+  version "0.1.0"
+
 react-native-flipper@^0.103.0:
   version "0.103.0"
   resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.103.0.tgz#32cc1d9afd5c04a56b4f54b8aad08c07ea854fdf"

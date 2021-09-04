@@ -26,6 +26,8 @@ target 'ReactNativeFlipperExample' do
   use_flipper!({ 'Flipper' => flipperkit_version, 'Flipper-Folly' => '2.6.7', 'Flipper-RSocket' => '1.4.3', 'Flipper-DoubleConversion' => '3.1.7', 'Flipper-Glog' => '0.3.9', 'Flipper-PeerTalk' => '0.0.4' })
   post_install do |installer|
     flipper_post_install(installer)
+    find_and_replace("Pods/RCT-Folly/folly/synchronization/DistributedMutex-inl.h",
+          "  atomic_notify_one(state);", "  folly::atomic_notify_one(state);")
     # based on https://stackoverflow.com/a/37289688/1983583
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
@@ -33,4 +35,20 @@ target 'ReactNativeFlipperExample' do
       end
     end
   end
+end
+
+# add before target 'xxxx' do
+def find_and_replace(dir, findstr, replacestr)
+  Dir[dir].each do |name|
+      text = File.read(name)
+      replace = text.gsub(findstr,replacestr)
+
+      if text != replace
+          puts "Fix: " + name
+          system("chmod +w " + name)
+          File.open(name, "w") { |file| file.puts replace }
+          STDOUT.flush
+      end
+  end
+  Dir[dir + '*/'].each(&method(:find_and_replace))
 end

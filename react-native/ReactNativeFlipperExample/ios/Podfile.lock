@@ -282,7 +282,9 @@ PODS:
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
   - React-jsinspector (0.64.2)
-  - react-native-flipper (0.104.0):
+  - react-native-firetv (0.1.0):
+    - React-Core
+  - react-native-flipper (0.105.0):
     - React-Core
   - React-perflogger (0.64.2)
   - React-RCTActionSheet (0.64.2):
@@ -392,6 +394,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-firetv (from `../node_modules/react-native-firetv`)
   - react-native-flipper (from `../node_modules/react-native-flipper`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -456,6 +459,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-firetv:
+    :path: "../node_modules/react-native-firetv"
   react-native-flipper:
     :path: "../node_modules/react-native-flipper"
   React-perflogger:
@@ -490,7 +495,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
-  FBReactNativeSpec: 7a64f01e5f406d56328f7d591e1fd8525cd25d3a
+  FBReactNativeSpec: 02a7163c0dc8b5feb357f0c1dd3654aca634df7a
   Flipper: 3532e5cc3145575ed516093fe5227831cd62d464
   Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
   Flipper-DoubleConversion: 57ffbe81ef95306cc9e69c4aa3aeeeeb58a6a28c
@@ -515,7 +520,8 @@ SPEC CHECKSUMS:
   React-jsi: 67747b9722f6dab2ffe15b011bcf6b3f2c3f1427
   React-jsiexecutor: 80c46bd381fd06e418e0d4f53672dc1d1945c4c3
   React-jsinspector: cc614ec18a9ca96fd275100c16d74d62ee11f0ae
-  react-native-flipper: 58bc8d50ff7b97cc461cdaf3639fa7f076dbfa76
+  react-native-firetv: 048cbeef144e053a7720da405b90ef8ac6b6d34e
+  react-native-flipper: 5626e75999bce12c90f587d4f8e2199afd4fe1f9
   React-perflogger: 25373e382fed75ce768a443822f07098a15ab737
   React-RCTActionSheet: af7796ba49ffe4ca92e7277a5d992d37203f7da5
   React-RCTAnimation: 6a2e76ab50c6f25b428d81b76a5a45351c4d77aa
@@ -531,6 +537,6 @@ SPEC CHECKSUMS:
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 3365f2e2f9b48bf3e55ad4798e9d7acf6d787087
+PODFILE CHECKSUM: 30a1f8eabcf2e36dd76e6bcf841038a9f4554780
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.10.1
