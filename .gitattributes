@@ -1,3 +1,2 @@
 # This file is renamed from _gitattributes to .gitattributes in ShipIt.
 * text=auto eol=lf
-react-native/ReactNativeFlipperExample/packages/react-native-firetv/ios/Frameworks/AmazonFling.framework/Versions/A/AmazonFling filter=lfs diff=lfs merge=lfs -text
